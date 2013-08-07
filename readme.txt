@@ -77,6 +77,11 @@ At this time the plugin only supports a single location, and a multi-locational 
 
 == Changelog ==
 
+= 1.0.9 =
+* Admin settings page layout done
+* Final prep for upload to WP repository
+* Tested with WP 3.6 
+
 = 1.0.4 =
 * Added 100 pixel icon choices
 * Added three more services - Customer Lobby, Demand Force and Twitter.
