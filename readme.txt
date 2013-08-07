@@ -2,7 +2,7 @@
 Contributors: cyber49
 Tags: localseo, profiles, profile pages
 Requires at least: 3.5.1			
-Tested up to: 3.5.2
+Tested up to: 3.6
 Stable tag: 1.0.9
 
 Display the logos and links for 23 different profile services where users can leave feedback.
