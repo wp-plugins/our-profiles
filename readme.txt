@@ -1,5 +1,5 @@
 === Our Profiles ===
-Contributors: shendison
+Contributors: cyber49
 Tags: localseo, profiles, profile pages
 Requires at least: 3.5.1			
 Tested up to: 3.5.2
