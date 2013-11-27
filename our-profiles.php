@@ -3,7 +3,7 @@
 Plugin Name: Our Profiles
 Plugin URI: http://www.seoautomatic.com/wordpress-plugin-our-profiles
 Description: This plugin allows you to enter your profile URLs in the <a href="admin.php?page=our-profiles-config">settings</a> and use a shortcode on pages or posts. Provided by SEO Automatic, a Search Commander, Inc. company.
-Version: 1.0.9.1
+Version: 1.0.10
 Author: Scott Hendison
 Author URI: http://profiles.wordpress.org/cyber49/
 */
@@ -144,7 +144,7 @@ function ourprofiles_init(){
         ourprofiles_reset();
     }
 
-    // 1.0.9.1 update
+    // 1.0.10 update
     if (   !isset($ourprofiles_services['tripadvisor'])
     ){
         ourprofiles_reset();
