@@ -2,8 +2,8 @@
 Contributors: cyber49
 Tags: localseo, profiles, profile pages
 Requires at least: 3.5.1			
-Tested up to: 3.6
-Stable tag: 1.0.9
+Tested up to: 3.7.1
+Stable tag: 1.0.9.1
 
 Display the logos and links for 23 different profile services where users can leave feedback.
 
@@ -37,6 +37,7 @@ The services supported are:
 *   YP.com 
 *   DemandForce 
 *   Twitter (@whynot?)
+*   tripadvisor
 
 == Installation ==
 
@@ -76,6 +77,9 @@ At this time the plugin only supports a single location, and a multi-locational 
 
 
 == Changelog ==
+
+= 1.0.9.1 =
+* Added service - tripadvisor
 
 = 1.0.9 =
 * Admin settings page layout done

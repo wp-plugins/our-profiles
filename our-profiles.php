@@ -3,7 +3,7 @@
 Plugin Name: Our Profiles
 Plugin URI: http://www.seoautomatic.com/wordpress-plugin-our-profiles
 Description: This plugin allows you to enter your profile URLs in the <a href="admin.php?page=our-profiles-config">settings</a> and use a shortcode on pages or posts. Provided by SEO Automatic, a Search Commander, Inc. company.
-Version: 1.0.9
+Version: 1.0.9.1
 Author: Scott Hendison
 Author URI: http://profiles.wordpress.org/cyber49/
 */
@@ -46,7 +46,8 @@ function ourprofiles_reset(){
         'YP.com  ' => '',
         'DemandForce' => '',
         'CustomerLobby' => '',
-        'Twitter' => ''
+        'Twitter' => '',
+		'tripadvisor' => ''
     );
 
     $default_ourprofiles_services = array(
@@ -72,7 +73,8 @@ function ourprofiles_reset(){
         'YP.com  ' => array('image' => 'YP.png', 'domain' => 'http://www.yellowpages.com/'),
         'DemandForce' => array('image' => 'DemandForce.png', 'domain' => 'http://www.demandforce.com/'),
         'CustomerLobby' => array('image' => 'CustomerLobby.png', 'domain' => 'http://www.customerlobby.com/'),
-        'Twitter' => array('image' => 'Twitter.png', 'domain' => 'http://www.twitter.com/')
+        'Twitter' => array('image' => 'Twitter.png', 'domain' => 'http://www.twitter.com/'),
+		'tripadvisor' => array('image' => 'tripadvisor.png', 'domain' => 'http://www.tripadvisor.com/')
     );
 
     $default_ourprofiles_options = array(
@@ -137,6 +139,13 @@ function ourprofiles_init(){
     if (   !isset($ourprofiles_services['DemandForce'])
         || !isset($ourprofiles_services['CustomerLobby'])
         || !isset($ourprofiles_services['Twitter'])
+        || !isset($ourprofiles_services['tripadvisor'])
+    ){
+        ourprofiles_reset();
+    }
+
+    // 1.0.9.1 update
+    if (   !isset($ourprofiles_services['tripadvisor'])
     ){
         ourprofiles_reset();
     }
