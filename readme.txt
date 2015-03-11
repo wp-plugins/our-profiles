@@ -2,8 +2,8 @@
 Contributors: cyber49
 Tags: localseo, profiles, profile pages
 Requires at least: 3.5.1			
-Tested up to: 3.9
-Stable tag: 1.0.10
+Tested up to: 4.1.1
+Stable tag: 1.0.11
 
 Display the logos and links for 23 different profile services where users can leave feedback.
 
@@ -38,6 +38,8 @@ The services supported are:
 *   DemandForce 
 *   Twitter (@whynot?)
 *   tripadvisor
+*   Angie's list
+*   Houzz
 
 == Installation ==
 
@@ -77,6 +79,10 @@ At this time the plugin only supports a single location, and a multi-locational 
 
 
 == Changelog ==
+
+= 1.0.11 =
+* Addition of Angie's list and Houzz to Our Profiles
+* Fixed youtube 3 minute video link in Our Profiles
 
 = 1.0.10 =
 * Added service - tripadvisor
