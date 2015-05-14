@@ -3,7 +3,7 @@
 Plugin Name: Our Profiles
 Plugin URI: http://www.seoautomatic.com/wordpress-plugin-our-profiles
 Description: This plugin allows you to enter your profile URLs in the <a href="admin.php?page=our-profiles-config">settings</a> and use a shortcode on pages or posts. Provided by SEO Automatic, a Search Commander, Inc. company.
-Version: 1.0.11
+Version: 1.0.12
 Author: Scott Hendison
 Author URI: http://profiles.wordpress.org/cyber49/
 */
@@ -107,7 +107,6 @@ function ourprofiles_activate() {
     if ( !current_user_can( 'activate_plugins' ) )
         return;
     $plugin = isset( $_REQUEST['plugin'] ) ? $_REQUEST['plugin'] : '';
-    check_admin_referer( "activate-plugin_{$plugin}" );
 
     ourprofiles_reset();
 
@@ -119,9 +118,8 @@ function ourprofiles_deactivate() {
     if ( !current_user_can( 'activate_plugins' ) )
         return;
     $plugin = isset( $_REQUEST['plugin'] ) ? $_REQUEST['plugin'] : '';
-    check_admin_referer( "deactivate-plugin_{$plugin}" );
 
-//    delete_option('ourprofiles_links');
+
     delete_option('ourprofiles_services');
     delete_option('ourprofiles_options');
 }
